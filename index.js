@@ -522,7 +522,7 @@ jQuery(() => {
                         if (selected[id]) chk.classList.add("on");
                         else chk.classList.remove("on");
                         var cnt = 0;
-                        for (varck in selected) {
+                        for (var ck in selected) {
                             if (selected[ck]) cnt++;
                         }
                         pmsgEl.textContent = "已选 " + cnt + " 条";
