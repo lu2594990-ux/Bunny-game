@@ -57,7 +57,7 @@ jQuery(() => {
     function isItemEnabled(id) {
         var el = document.querySelector('[data-pm-identifier="' + id + '"] .prompt-manager-toggle-action');
         if (!el) return false;
-        return el.classList.contains("fa-toggle-on");
+        return !el.classList.contains("fa-toggle-off");
     }
     function toggleItem(id) {
         var el = document.querySelector('[data-pm-identifier="' + id + '"] .prompt-manager-toggle-action');
