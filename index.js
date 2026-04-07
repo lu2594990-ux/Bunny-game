@@ -319,7 +319,7 @@ jQuery(() => {
 
         html += '<div class="blabel" style="margin-top:6px;">🧩 骨架碎片：</div><div class="pieces">';
         for (var hi = 0; hi < hitPieces.length; hi++) {
-            varhs = document.createElement("span"); hs.className = "hit"; hs.textContent = "✓" + hitPieces[hi];
+            var hs = document.createElement("span"); hs.className = "hit"; hs.textContent = "✓" + hitPieces[hi];
             html += hs.outerHTML;
         }
         for (var mi = 0; mi < missPieces.length; mi++) {
