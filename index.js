@@ -547,7 +547,7 @@ jQuery(() => {
     }, { passive: false });
     fab.addEventListener("touchend", function (e) {
         e.preventDefault(); e.stopImmediatePropagation();
-        varwd = dragging, wm = hasMoved;
+        var wd = dragging, wm = hasMoved;
         dragging = false; hasMoved = false;
         if (wd && !wm) setTimeout(function () { toggleP(); }, 50);
         if (wd && wm) { localStorage.setItem("bnyPosX", String(posX)); localStorage.setItem("bnyPosY", String(posY)); }
