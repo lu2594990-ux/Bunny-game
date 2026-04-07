@@ -608,7 +608,7 @@ jQuery(() => {
     fab.addEventListener("touchend", function (e) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        varwd = dragging;
+        var wd = dragging;
         var wm = hasMoved;
         dragging = false;
         hasMoved = false;
