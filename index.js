@@ -55,9 +55,11 @@ jQuery(() => {
         return null;
     }
     function isItemEnabled(id) {
-        var el = document.querySelector('[data-pm-identifier="' + id + '"] .prompt-manager-toggle-action');
-        if (!el) return false;
-        return !el.classList.contains("fa-toggle-off");
+        var order = getActiveOrder();
+        for (var i = 0; i < order.length; i++) {
+            if (order[i].identifier === id) return order[i].enabled;
+        }
+        return false;
     }
     function toggleItem(id) {
         var el = document.querySelector('[data-pm-identifier="' + id + '"] .prompt-manager-toggle-action');
